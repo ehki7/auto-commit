@@ -7,7 +7,7 @@ on:
       - master
       
   schedule:
-  - cron: "*/30 * * * *" # See https://crontab.guru/#0_7,9,11_*_*_1,3
+  - cron: "0 */3 * * *" # See https://crontab.guru/#0_7,9,11_*_*_1,3
 
 jobs:
   auto_commit:
@@ -26,7 +26,7 @@ jobs:
       - name: Commit changes
         run: |
           git config --local user.email "rizkiandrianto305@gmail.com"
-          git config --local user.name "rizk7"
+          git config --local user.name "ehki7"
           git add -A
           
           arr[0]="chore(bot): 😂 auto commit"
